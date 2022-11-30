@@ -1,0 +1,59 @@
+.flex-all-center {
+    display: flex;
+    justify-content: center;
+    /* verticaly */
+    align-items: center;
+    /* horizontaly * */
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background-color: green;
+    }
+    header {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background-color: red;
+    }
+    header {
+        font-size: 10px;
+    }
+    nav {
+        flex-direction: row;
+    }
+    nav li {
+        padding: 20px 6px 0px 5px;
+    }
+    .logo img {
+        width: 40px;
+        padding: 5px 8px 5px 2px;
+    }
+    nav ul {
+        justify-content: center;
+        height: 34px;
+    }
+    .search {
+        justify-content: center;
+    }
+    .search input {
+        margin: 12px 5px;
+        width: 14vw;
+        height: 21px;
+    }
+    .search button {
+        font-weight: 3px;
+        width: 13vw;
+        height: 22px;
+    }
+    .btn {
+        padding: 5px 0px 5px 0px;
+        border-radius: 4px;
+    }
+    .slider {
+        height: 20vh;
+    }
+}
